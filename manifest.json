@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "二维码生成器",
-    "version": "1.0",
-    "description": "网页URL转换成二维码插件",
+    "version": "1.1",
+    "description": "网页URL转换成二维码插件,快捷键 Alt+Q",
     "icons": {
         "16": "images/icon16.png",
         "48": "images/icon48.png",
@@ -15,6 +15,14 @@
         },
         "default_title": "二维码",
         "default_popup": "popup.html"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "windows": "Alt+Q",
+                "mac": "Alt+Q"
+            }
+        }
     },
     "permissions": [
         "tabs"
